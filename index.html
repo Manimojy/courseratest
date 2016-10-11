@@ -18,7 +18,11 @@
         <div>
              {{sayHello()}} {{name}}! Your total numeric value is  : {{totalValue}} <br />
         </div>
-
+        <div>
+            <button ng-click="changePhoto()">Change photo</button>
+            <br />
+            <img ng-src="images/{{curPhoto}}.jpg" />
+        </div>
     </div>
 </body>
 </html>

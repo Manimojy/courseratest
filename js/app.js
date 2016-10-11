@@ -31,6 +31,11 @@
             $scope.name = upCase($scope.name);
             $scope.displayTotal();
         };
+
+        $scope.curPhoto = "img10";
+        $scope.changePhoto = function () {
+            $scope.curPhoto = "img7";
+        }
     }
 
     //myFirstApp.controller('DIController', DIController);
