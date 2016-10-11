@@ -8,9 +8,16 @@
     <title>Coursera - First Angular</title>
 </head>
 <body>
-<h1>Hello Coursera test for students !!!</h1>
+<h1>Hello Coursera test for students. My first Angular!!</h1>
     <div ng-controller="MyFirstController">
-
+        Enter username:   
+        <input type="text" 
+               ng-model="name"
+               ng-blur="upper();"
+               ng-keyup="displayTotal();"/>
+        <div>
+             {{sayHello()}} {{name}}! Your total numeric value is  : {{totalValue}}
+        </div>
     </div>
 </body>
 </html>
